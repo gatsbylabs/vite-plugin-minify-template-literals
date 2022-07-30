@@ -1,7 +1,7 @@
 # Vite Plugin Minify Template Literals
 
 Minify tagged template literal strings for styled components and graphql by removing white space.
-Template literals tagged with `gql`, `css`, and `styled.*` will be minifie.
+Template literals tagged with `gql`, `css`, and `styled.*` will be minified.
 This can shave some bytes off your total bundle size without changing application code.
 
 ```js
