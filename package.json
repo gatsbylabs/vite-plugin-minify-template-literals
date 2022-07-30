@@ -1,8 +1,18 @@
 {
   "name": "@gatsbylabs/vite-plugin-minify-template-literals",
+  "author": "Enoch Chau <enoch@gatsby.events>",
+  "files": [
+    "dist/"
+  ],
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
+  "repository": "git@github.com:gatsbylabs/vite-plugin-minify-template-literals.git",
+  "homepage": "https://github.com/gatsbylabs/vite-plugin-minify-template-literals#readme",
+  "bugs": {
+    "url": "https://github.com/gatsbylabs/vite-plugin-minify-template-literals/issues"
+  },
   "packageManager": "yarn@3.2.2",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.31.0",
@@ -15,7 +25,8 @@
   "scripts": {
     "build": "tsc",
     "fmt": "prettier --write .",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "prepublish": "yarn fmt && yarn lint && yarn build"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
@@ -25,5 +36,15 @@
   },
   "peerDependencies": {
     "vite": ">=2.9"
-  }
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "template literal",
+    "minify",
+    "css",
+    "styled components",
+    "gql",
+    "graphql"
+  ]
 }
