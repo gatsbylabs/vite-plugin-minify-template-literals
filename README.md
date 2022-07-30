@@ -42,4 +42,4 @@ export interface Options {
 
 ---
 
-Created and maintained by [Enoch Chau](https://enochchau.com) and the engineers at [Gatsby](https://gatsby.events).
+Created and maintained by [Enoch Chau](https://enochchau.com) and the engineers at [Gatsby Labs](https://gatsby.events).
