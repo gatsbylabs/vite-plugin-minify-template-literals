@@ -23,7 +23,7 @@ function getMinifier(
   return null;
 }
 
-export default function plugin(
+export function plugin(
   opts: Options = { css: true, gql: true }
 ): Plugin {
   if (!opts.css) opts.css = true;

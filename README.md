@@ -24,7 +24,7 @@ const query = gql`
 ```ts
 // vite.config.ts
 import { defineConfig } from "vite";
-import templateLiteralPlugin from "@gatsbylabs/vite-plugin-minify-template-literals";
+import { plugin as templateLiteralPlugin } from "@gatsbylabs/vite-plugin-minify-template-literals";
 
 defineConfig({
   plugins: [templateLiteralPlugin()],
