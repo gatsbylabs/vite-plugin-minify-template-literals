@@ -1,5 +1,5 @@
 import { Plugin } from "vite";
-import { minifyRaw } from "babel-plugin-styled-components/lib/minify/index.js";
+import { minifyRaw } from "babel-plugin-styled-components/lib/minify";
 import { stripIgnoredCharacters } from "graphql/utilities";
 import MagicString from "magic-string";
 import * as pl from "parse-literals";
@@ -23,9 +23,7 @@ function getMinifier(
   return null;
 }
 
-export function plugin(
-  opts: Options = { css: true, gql: true }
-): Plugin {
+export function plugin(opts: Options = { css: true, gql: true }): Plugin {
   if (!opts.css) opts.css = true;
   if (!opts.gql) opts.gql = true;
 
