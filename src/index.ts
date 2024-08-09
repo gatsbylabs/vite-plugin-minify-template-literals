@@ -1,5 +1,5 @@
 import { Plugin } from "vite";
-import { minifyRaw } from "babel-plugin-styled-components/lib/minify";
+import { minifyRaw } from "babel-plugin-styled-components/lib/minify/index.js";
 import { stripIgnoredCharacters } from "graphql/utilities";
 import MagicString from "magic-string";
 import * as pl from "parse-literals";
