@@ -1,10 +1,11 @@
 {
+  "type": "module",
   "name": "@gatsbylabs/vite-plugin-minify-template-literals",
   "author": "Enoch Chau <enoch@gatsby.events>",
   "files": [
     "dist/"
   ],
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -36,7 +37,8 @@
     "typecheck": "tsc",
     "fmt": "prettier --write .",
     "lint": "eslint src/",
-    "prepublish": "yarn fmt && yarn lint && && yarn typecheck && yarn build"
+    "prepublish": "yarn build",
+    "test": "vite build"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
